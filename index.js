@@ -10,6 +10,7 @@ class RouterReload {
         var index = this.findInStack(route);
         if(index === -1) throw new Error("Router does not already exist.");
         this.replaceInStack(index, newRoute);
+        return true;
     };
     findInStack(route) {
         var foundLayer = this.stack.find(function(x) {
