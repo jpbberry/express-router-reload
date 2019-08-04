@@ -18,7 +18,7 @@ delete require.cache[require.resolve("./routers/router.js")];
 router = require('./routers/router.js');
 
 //now
-reloader("/route", router);
+reloader.reload("/route", router);
 
 // Overwrites the old router with the new refreshed one!
 ```
